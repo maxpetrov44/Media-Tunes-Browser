@@ -7,16 +7,78 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "61DFD3A3-610A-4A14-9622-92ABE17A124F"
+            uuid = "1DAD7A77-AAEB-4740-9301-AC5492C97F5F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MediaTunesBrowser/SceneDelegate.swift"
+            filePath = "MediaTunesBrowser/Core/Services/NetworkService/MTBrowserNetworkService+Process.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkName = "process(httpRequest:httpURLResponse:data:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1DAD7A77-AAEB-4740-9301-AC5492C97F5F - 647e6ee472eab316"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MediaTunesBrowser.MTBrowserNetworkService.process&lt;&#x3c4;_0_0&gt;(httpRequest: MediaTunesBrowser.NetworkRequest, httpURLResponse: __C.NSHTTPURLResponse, data: Foundation.Data) throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MediaTunesBrowser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mxptrv/Documents/projects/MediaTunesBrowser/MediaTunesBrowser/Core/Services/NetworkService/MTBrowserNetworkService+Process.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19">
+               </Location>
+               <Location
+                  uuid = "1DAD7A77-AAEB-4740-9301-AC5492C97F5F - 647e6ee472eab316"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MediaTunesBrowser.MTBrowserNetworkService.process&lt;&#x3c4;_0_0&gt;(httpRequest: MediaTunesBrowser.NetworkRequest, httpURLResponse: __C.NSHTTPURLResponse, data: Foundation.Data) throws -&gt; &#x3c4;_0_0"
+                  moduleName = "MediaTunesBrowser"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mxptrv/Documents/projects/MediaTunesBrowser/MediaTunesBrowser/Core/Services/NetworkService/MTBrowserNetworkService+Process.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17206734-5CA6-44CB-BD16-5ABA44570C27"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediaTunesBrowser/Core/Models/BaseMediaContent.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69433191-3855-4C95-8BF7-806B32449C0F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediaTunesBrowser/Core/Services/NetworkService/MTBrowserNetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "urlRequest(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
