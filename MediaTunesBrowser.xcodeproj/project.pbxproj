@@ -14,6 +14,26 @@
 		60055B8D2BC15DB80058F714 /* MediaTunesBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055B8C2BC15DB80058F714 /* MediaTunesBrowserTests.swift */; };
 		60055B972BC15DB80058F714 /* MediaTunesBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055B962BC15DB80058F714 /* MediaTunesBrowserUITests.swift */; };
 		60055B992BC15DB80058F714 /* MediaTunesBrowserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055B982BC15DB80058F714 /* MediaTunesBrowserUITestsLaunchTests.swift */; };
+		60055BA92BC169310058F714 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BA82BC169310058F714 /* NetworkService.swift */; };
+		60055BAB2BC169630058F714 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BAA2BC169630058F714 /* NetworkRequest.swift */; };
+		60055BAD2BC169B60058F714 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BAC2BC169B60058F714 /* NetworkResult.swift */; };
+		60055BAF2BC169DE0058F714 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BAE2BC169DE0058F714 /* NetworkError.swift */; };
+		60055BB12BC16E740058F714 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BB02BC16E740058F714 /* NetworkConfiguration.swift */; };
+		60055BB32BC16EDF0058F714 /* NetworkServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BB22BC16EDF0058F714 /* NetworkServiceHelper.swift */; };
+		60055BB62BC170B10058F714 /* MTBrowserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BB52BC170B10058F714 /* MTBrowserNetworkService.swift */; };
+		60055BB92BC172F30058F714 /* NetworkRequest+Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BB82BC172F30058F714 /* NetworkRequest+Endpoint.swift */; };
+		60055BBB2BC173A40058F714 /* NetworkRequest+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BBA2BC173A40058F714 /* NetworkRequest+Parameters.swift */; };
+		60055BBE2BC1757E0058F714 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BBD2BC1757E0058F714 /* Then.swift */; };
+		60055BC02BC176490058F714 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BBF2BC176490058F714 /* HttpMethod.swift */; };
+		60055BC22BC178B50058F714 /* MTBrowserNetworkService+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BC12BC178B50058F714 /* MTBrowserNetworkService+Process.swift */; };
+		60055BC62BC2957B0058F714 /* BaseMediaContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BC52BC2957B0058F714 /* BaseMediaContent.swift */; };
+		60055BC82BC29D880058F714 /* MediaWrapperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BC72BC29D880058F714 /* MediaWrapperType.swift */; };
+		60055BCA2BC29DC00058F714 /* MediaExplicitness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BC92BC29DC00058F714 /* MediaExplicitness.swift */; };
+		60055BCC2BC29DE50058F714 /* MediaKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BCB2BC29DE50058F714 /* MediaKind.swift */; };
+		60055BCE2BC2D13E0058F714 /* MediaArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BCD2BC2D13E0058F714 /* MediaArtist.swift */; };
+		60055BD02BC2D32D0058F714 /* MediaCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BCF2BC2D32D0058F714 /* MediaCollection.swift */; };
+		60055BD22BC2D3C20058F714 /* MediaTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BD12BC2D3C20058F714 /* MediaTrack.swift */; };
+		60055BD52BC2E3890058F714 /* SearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BD42BC2E3890058F714 /* SearchResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +65,26 @@
 		60055B922BC15DB80058F714 /* MediaTunesBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaTunesBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60055B962BC15DB80058F714 /* MediaTunesBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTunesBrowserUITests.swift; sourceTree = "<group>"; };
 		60055B982BC15DB80058F714 /* MediaTunesBrowserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTunesBrowserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		60055BA82BC169310058F714 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		60055BAA2BC169630058F714 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		60055BAC2BC169B60058F714 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		60055BAE2BC169DE0058F714 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		60055BB02BC16E740058F714 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		60055BB22BC16EDF0058F714 /* NetworkServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceHelper.swift; sourceTree = "<group>"; };
+		60055BB52BC170B10058F714 /* MTBrowserNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTBrowserNetworkService.swift; sourceTree = "<group>"; };
+		60055BB82BC172F30058F714 /* NetworkRequest+Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkRequest+Endpoint.swift"; sourceTree = "<group>"; };
+		60055BBA2BC173A40058F714 /* NetworkRequest+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkRequest+Parameters.swift"; sourceTree = "<group>"; };
+		60055BBD2BC1757E0058F714 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		60055BBF2BC176490058F714 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		60055BC12BC178B50058F714 /* MTBrowserNetworkService+Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTBrowserNetworkService+Process.swift"; sourceTree = "<group>"; };
+		60055BC52BC2957B0058F714 /* BaseMediaContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMediaContent.swift; sourceTree = "<group>"; };
+		60055BC72BC29D880058F714 /* MediaWrapperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWrapperType.swift; sourceTree = "<group>"; };
+		60055BC92BC29DC00058F714 /* MediaExplicitness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaExplicitness.swift; sourceTree = "<group>"; };
+		60055BCB2BC29DE50058F714 /* MediaKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaKind.swift; sourceTree = "<group>"; };
+		60055BCD2BC2D13E0058F714 /* MediaArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaArtist.swift; sourceTree = "<group>"; };
+		60055BCF2BC2D32D0058F714 /* MediaCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCollection.swift; sourceTree = "<group>"; };
+		60055BD12BC2D3C20058F714 /* MediaTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTrack.swift; sourceTree = "<group>"; };
+		60055BD42BC2E3890058F714 /* SearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +139,7 @@
 				60055B772BC15DB20058F714 /* SceneDelegate.swift */,
 				60055BA52BC162DD0058F714 /* UI */,
 				60055BA62BC162EB0058F714 /* Core */,
+				60055BBC2BC175720058F714 /* Utilities */,
 				60055B7E2BC15DB70058F714 /* Assets.xcassets */,
 				60055B832BC15DB70058F714 /* Info.plist */,
 			);
@@ -133,8 +174,83 @@
 		60055BA62BC162EB0058F714 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				60055BC42BC292540058F714 /* Models */,
+				60055BC32BC292480058F714 /* Services */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		60055BA72BC169220058F714 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				60055BB52BC170B10058F714 /* MTBrowserNetworkService.swift */,
+				60055BB42BC170780058F714 /* Interface+Helpers */,
+				60055BC12BC178B50058F714 /* MTBrowserNetworkService+Process.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		60055BB42BC170780058F714 /* Interface+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				60055BA82BC169310058F714 /* NetworkService.swift */,
+				60055BB72BC172DC0058F714 /* Requests */,
+				60055BAC2BC169B60058F714 /* NetworkResult.swift */,
+				60055BAE2BC169DE0058F714 /* NetworkError.swift */,
+				60055BB02BC16E740058F714 /* NetworkConfiguration.swift */,
+				60055BB22BC16EDF0058F714 /* NetworkServiceHelper.swift */,
+				60055BBF2BC176490058F714 /* HttpMethod.swift */,
+			);
+			path = "Interface+Helpers";
+			sourceTree = "<group>";
+		};
+		60055BB72BC172DC0058F714 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				60055BAA2BC169630058F714 /* NetworkRequest.swift */,
+				60055BB82BC172F30058F714 /* NetworkRequest+Endpoint.swift */,
+				60055BBA2BC173A40058F714 /* NetworkRequest+Parameters.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		60055BBC2BC175720058F714 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				60055BBD2BC1757E0058F714 /* Then.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		60055BC32BC292480058F714 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				60055BA72BC169220058F714 /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		60055BC42BC292540058F714 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60055BD32BC2E3790058F714 /* ResponseModels */,
+				60055BC52BC2957B0058F714 /* BaseMediaContent.swift */,
+				60055BC72BC29D880058F714 /* MediaWrapperType.swift */,
+				60055BC92BC29DC00058F714 /* MediaExplicitness.swift */,
+				60055BCB2BC29DE50058F714 /* MediaKind.swift */,
+				60055BCD2BC2D13E0058F714 /* MediaArtist.swift */,
+				60055BCF2BC2D32D0058F714 /* MediaCollection.swift */,
+				60055BD12BC2D3C20058F714 /* MediaTrack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60055BD32BC2E3790058F714 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				60055BD42BC2E3890058F714 /* SearchResponseModel.swift */,
+			);
+			path = ResponseModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +382,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60055BB32BC16EDF0058F714 /* NetworkServiceHelper.swift in Sources */,
+				60055BCA2BC29DC00058F714 /* MediaExplicitness.swift in Sources */,
+				60055BCC2BC29DE50058F714 /* MediaKind.swift in Sources */,
 				60055B7A2BC15DB20058F714 /* ViewController.swift in Sources */,
+				60055BAF2BC169DE0058F714 /* NetworkError.swift in Sources */,
 				60055B762BC15DB20058F714 /* AppDelegate.swift in Sources */,
+				60055BA92BC169310058F714 /* NetworkService.swift in Sources */,
+				60055BCE2BC2D13E0058F714 /* MediaArtist.swift in Sources */,
+				60055BAD2BC169B60058F714 /* NetworkResult.swift in Sources */,
+				60055BC82BC29D880058F714 /* MediaWrapperType.swift in Sources */,
+				60055BB92BC172F30058F714 /* NetworkRequest+Endpoint.swift in Sources */,
+				60055BC62BC2957B0058F714 /* BaseMediaContent.swift in Sources */,
+				60055BBE2BC1757E0058F714 /* Then.swift in Sources */,
+				60055BB62BC170B10058F714 /* MTBrowserNetworkService.swift in Sources */,
+				60055BC22BC178B50058F714 /* MTBrowserNetworkService+Process.swift in Sources */,
+				60055BBB2BC173A40058F714 /* NetworkRequest+Parameters.swift in Sources */,
+				60055BC02BC176490058F714 /* HttpMethod.swift in Sources */,
 				60055B782BC15DB20058F714 /* SceneDelegate.swift in Sources */,
+				60055BD22BC2D3C20058F714 /* MediaTrack.swift in Sources */,
+				60055BAB2BC169630058F714 /* NetworkRequest.swift in Sources */,
+				60055BD52BC2E3890058F714 /* SearchResponseModel.swift in Sources */,
+				60055BB12BC16E740058F714 /* NetworkConfiguration.swift in Sources */,
+				60055BD02BC2D32D0058F714 /* MediaCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
