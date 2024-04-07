@@ -34,6 +34,12 @@
 		60055BD02BC2D32D0058F714 /* MediaCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BCF2BC2D32D0058F714 /* MediaCollection.swift */; };
 		60055BD22BC2D3C20058F714 /* MediaTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BD12BC2D3C20058F714 /* MediaTrack.swift */; };
 		60055BD52BC2E3890058F714 /* SearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BD42BC2E3890058F714 /* SearchResponseModel.swift */; };
+		60055BD92BC31E790058F714 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BD82BC31E790058F714 /* UIView+Extensions.swift */; };
+		60055BDB2BC31EAC0058F714 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BDA2BC31EAC0058F714 /* UIStackView+Extensions.swift */; };
+		60055BDF2BC320300058F714 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BDE2BC320300058F714 /* UICollectionView+Extension.swift */; };
+		60055BE12BC320730058F714 /* UICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BE02BC320730058F714 /* UICollectionReusableView.swift */; };
+		60055BE32BC320DE0058F714 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BE22BC320DE0058F714 /* UIView+Constraints.swift */; };
+		60055BE52BC322A40058F714 /* LoadingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60055BE42BC322A30058F714 /* LoadingContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +91,12 @@
 		60055BCF2BC2D32D0058F714 /* MediaCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCollection.swift; sourceTree = "<group>"; };
 		60055BD12BC2D3C20058F714 /* MediaTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTrack.swift; sourceTree = "<group>"; };
 		60055BD42BC2E3890058F714 /* SearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponseModel.swift; sourceTree = "<group>"; };
+		60055BD82BC31E790058F714 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		60055BDA2BC31EAC0058F714 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		60055BDE2BC320300058F714 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		60055BE02BC320730058F714 /* UICollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableView.swift; sourceTree = "<group>"; };
+		60055BE22BC320DE0058F714 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		60055BE42BC322A30058F714 /* LoadingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +178,7 @@
 		60055BA52BC162DD0058F714 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				60055BE62BC322F00058F714 /* Common */,
 				60055B792BC15DB20058F714 /* ViewController.swift */,
 			);
 			path = UI;
@@ -217,6 +230,7 @@
 		60055BBC2BC175720058F714 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				60055BDD2BC3200E0058F714 /* UI */,
 				60055BBD2BC1757E0058F714 /* Then.swift */,
 			);
 			path = Utilities;
@@ -251,6 +265,26 @@
 				60055BD42BC2E3890058F714 /* SearchResponseModel.swift */,
 			);
 			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		60055BDD2BC3200E0058F714 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				60055BD82BC31E790058F714 /* UIView+Extensions.swift */,
+				60055BDA2BC31EAC0058F714 /* UIStackView+Extensions.swift */,
+				60055BDE2BC320300058F714 /* UICollectionView+Extension.swift */,
+				60055BE02BC320730058F714 /* UICollectionReusableView.swift */,
+				60055BE22BC320DE0058F714 /* UIView+Constraints.swift */,
+				60055BE42BC322A30058F714 /* LoadingContentViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		60055BE62BC322F00058F714 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,18 +417,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				60055BB32BC16EDF0058F714 /* NetworkServiceHelper.swift in Sources */,
+				60055BE12BC320730058F714 /* UICollectionReusableView.swift in Sources */,
 				60055BCA2BC29DC00058F714 /* MediaExplicitness.swift in Sources */,
+				60055BD92BC31E790058F714 /* UIView+Extensions.swift in Sources */,
 				60055BCC2BC29DE50058F714 /* MediaKind.swift in Sources */,
+				60055BE52BC322A40058F714 /* LoadingContentViewController.swift in Sources */,
 				60055B7A2BC15DB20058F714 /* ViewController.swift in Sources */,
 				60055BAF2BC169DE0058F714 /* NetworkError.swift in Sources */,
 				60055B762BC15DB20058F714 /* AppDelegate.swift in Sources */,
 				60055BA92BC169310058F714 /* NetworkService.swift in Sources */,
+				60055BE32BC320DE0058F714 /* UIView+Constraints.swift in Sources */,
 				60055BCE2BC2D13E0058F714 /* MediaArtist.swift in Sources */,
 				60055BAD2BC169B60058F714 /* NetworkResult.swift in Sources */,
 				60055BC82BC29D880058F714 /* MediaWrapperType.swift in Sources */,
 				60055BB92BC172F30058F714 /* NetworkRequest+Endpoint.swift in Sources */,
 				60055BC62BC2957B0058F714 /* BaseMediaContent.swift in Sources */,
+				60055BDF2BC320300058F714 /* UICollectionView+Extension.swift in Sources */,
 				60055BBE2BC1757E0058F714 /* Then.swift in Sources */,
+				60055BDB2BC31EAC0058F714 /* UIStackView+Extensions.swift in Sources */,
 				60055BB62BC170B10058F714 /* MTBrowserNetworkService.swift in Sources */,
 				60055BC22BC178B50058F714 /* MTBrowserNetworkService+Process.swift in Sources */,
 				60055BBB2BC173A40058F714 /* NetworkRequest+Parameters.swift in Sources */,

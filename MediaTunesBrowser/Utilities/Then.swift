@@ -47,3 +47,5 @@ extension Optional {
         }
     }
 }
+
+extension NSObject: Then {}

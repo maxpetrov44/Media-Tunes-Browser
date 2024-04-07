@@ -8,30 +8,42 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class ViewController: LoadingContentViewController {
 
     var networkService: NetworkService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        view.addSubview(self.label)
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+        view.addSubview(button)
+        button.centerInSuperview()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    private lazy var button = UIButton().then {
+        $0.setTitle("load data", for: .normal)
+        $0.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
+    }
+    
+    @objc
+    private func onButton(_ sender: UIButton) {
+        sender.isEnabled = false
+        startAnimating()
         networkService.send(
             request: .search(
                 searchParameters: [
                     "term": "jack jonson",
-                    "limit": 25
+                    "limit": 300
             ]
             )
         ) { [weak self] (result: NetworkResult<(SearchResponseModel)>) in
+            defer { 
+                sender.isEnabled = true
+                self?.stopAnimating()
+            }
             switch result {
             case .success(let response):
                 print("total count: \(response.resultCount)")
@@ -41,14 +53,6 @@ class ViewController: UIViewController {
             }
         }
     }
-
-    private lazy var label: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Hello World!"
-        label.textColor = UIColor.white
-        return label
-    }()
 }
 
 struct VCNetworkConfiguration: NetworkConfiguration {
