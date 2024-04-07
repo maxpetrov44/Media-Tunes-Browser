@@ -33,22 +33,29 @@ struct BaseMediaContent: Decodable {
         var artist: MediaArtist?
         var collection: MediaCollection?
         var track: MediaTrack?
-        func getArtist() throws -> MediaArtist? {
-            if let artistContainer = try? decoder.container(keyedBy: MediaArtist.CodingKeys.self),
-               let id = try artistContainer.decodeIfPresent(Int.self, forKey: .id) {
+        
+        /// достает артиста
+        /// - Parameter idRequired: флаг `строгой` необходимости id
+        func getArtist(idRequired: Bool) throws -> MediaArtist? {
+            if let artistContainer = try? decoder.container(keyedBy: MediaArtist.CodingKeys.self) {
                 return .init(
-                    id: id,
+                    id: idRequired
+                    ? (try artistContainer.decodeIfPresent(Int.self, forKey: .id))
+                    : (try? artistContainer.decodeIfPresent(Int.self, forKey: .id)),
                     name: try artistContainer.decodeIfPresent(String.self, forKey: .name),
                     viewURL: try artistContainer.decodeIfPresent(URL.self, forKey: .viewURL)
                 )
             }
             return nil
         }
-        func getCollection() throws -> MediaCollection? {
-            if let collectionContainer = try? decoder.container(keyedBy: MediaCollection.CodingKeys.self),
-               let id = try collectionContainer.decodeIfPresent(Int.self, forKey: .id) {
+        /// достает коллекцию
+        /// - Parameter idRequired: флаг `строгой`  необходимости id
+        func getCollection(idRequired: Bool) throws -> MediaCollection? {
+            if let collectionContainer = try? decoder.container(keyedBy: MediaCollection.CodingKeys.self) {
                 return .init(
-                    id: id,
+                    id: idRequired
+                    ? (try collectionContainer.decodeIfPresent(Int.self, forKey: .id))
+                    : (try? collectionContainer.decodeIfPresent(Int.self, forKey: .id)),
                     name: try collectionContainer.decodeIfPresent(String.self, forKey: .name),
                     explicitness: try collectionContainer.decodeIfPresent(MediaExplicitness.self, forKey: .explicitness),
                     censoredName: try collectionContainer.decodeIfPresent(String.self, forKey: .censoredName),
@@ -57,11 +64,14 @@ struct BaseMediaContent: Decodable {
             }
             return nil
         }
-        func getTrack() throws -> MediaTrack? {
-            if let trackContainer = try? decoder.container(keyedBy: MediaTrack.CodingKeys.self),
-               let id = try trackContainer.decodeIfPresent(Int.self, forKey: .id) {
+        /// достает трек
+        /// - Parameter idRequired: флаг `строгой` необходимости id
+        func getTrack(idRequired: Bool) throws -> MediaTrack? {
+            if let trackContainer = try? decoder.container(keyedBy: MediaTrack.CodingKeys.self) {
                 return .init(
-                    id: id,
+                    id: idRequired
+                    ? (try trackContainer.decodeIfPresent(Int.self, forKey: .id))
+                    : (try? trackContainer.decodeIfPresent(Int.self, forKey: .id)),
                     name: try trackContainer.decodeIfPresent(String.self, forKey: .name),
                     explicitness: try trackContainer.decodeIfPresent(MediaExplicitness.self, forKey: .explicitness),
                     censoredNamed: try trackContainer.decodeIfPresent(String.self, forKey: .censoredNamed),
@@ -77,13 +87,13 @@ struct BaseMediaContent: Decodable {
         self.country = try mediaContainer.decode(String.self, forKey: .country)
         switch wrapperType {
         case .track, .audiobook:
-            artist = try getArtist()
-            track = try getTrack()
+            artist = try getArtist(idRequired: false)
+            track = try getTrack(idRequired: true)
         case .collection:
-            artist = try getArtist()
-            collection = try getCollection()
+            artist = try getArtist(idRequired: false)
+            collection = try getCollection(idRequired: true)
         case .artist:
-            artist = try getArtist()
+            artist = try getArtist(idRequired: true)
         }
         self.artist = artist
         self.track = track

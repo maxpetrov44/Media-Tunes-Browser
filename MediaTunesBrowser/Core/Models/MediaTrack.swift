@@ -8,10 +8,15 @@
 import Foundation
 
 struct MediaTrack {
-    let id: Int
+    /// id трека
+    let id: Int?
+    /// наименование трека
     let name: String?
+    /// уровень цензурирования
     let explicitness: MediaExplicitness?
+    /// цензурированное наименование
     let censoredNamed: String?
+    /// url на iTunes
     let viewURL: URL?
     
     enum CodingKeys: String, CodingKey {

@@ -8,10 +8,15 @@
 import Foundation
 
 struct MediaCollection {
-    let id: Int
+    /// id коллекции
+    let id: Int?
+    /// наименование коллекции
     let name: String?
+    /// уровень цензурирования
     let explicitness: MediaExplicitness?
+    ///  цензурированное наименование
     let censoredName: String?
+    /// url на iTunes
     let viewURL: URL?
     
     enum CodingKeys: String, CodingKey {

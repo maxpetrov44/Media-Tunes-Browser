@@ -8,8 +8,11 @@
 import Foundation
 
 struct MediaArtist {
-    let id: Int
+    /// id артиста
+    let id: Int?
+    /// наименование артиста
     let name: String?
+    /// ссылка на артиста на iTunes
     let viewURL: URL?
     
     enum CodingKeys: String, CodingKey {
